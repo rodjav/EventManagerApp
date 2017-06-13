@@ -1,0 +1,36 @@
+{
+  "name": "eventmanagerapp",
+  "version": "1.0.0",
+  "description": "Application for Learning Purposes",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "babel-node tools/startMessage.js",
+    "start": "npm-run-all --parallel open:src",
+    "open:src": "babel-node tools/srcServer.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js"
+  },
+  "author": "RodJav",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-es2015": "^1.2.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "bootstrap": "^3.3.7",
+    "colors": "^1.1.2",
+    "eslint": "^4.0.0",
+    "express": "^4.15.3",
+    "npm-run-all": "^4.0.2",
+    "open": "0.0.5",
+    "path": "^0.12.7",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-hot-middleware": "^2.18.0"
+  }
+}
