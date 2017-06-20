@@ -6,7 +6,7 @@
 
 var open = require('open')
 var express = require('express') 
-var webpack = require('webpack');//hey
+var webpack = require('webpack');
 var config = require('../webpack.config');
 var app = express();
 
